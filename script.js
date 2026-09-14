@@ -1,3 +1,14 @@
+<script>
+  atOptions = {
+    'key' : '40154d57b8f77367c97eb89f4d35bcac',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highrevenueformat.com/40154d57b8f77367c97eb89f4d35bcac/invoke.js"></script>
+
 const products = [
     { id: 1, name: "Nike Air Max Running Shoes", category: "Shoes", price: 299, oldPrice: 5999, rating: 4.5, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop", desc: "Premium running shoes with excellent cushioning and breathable design." },
     { id: 2, name: "Adidas Ultraboost Sneakers", category: "Shoes", price: 199, oldPrice: 9999, rating: 4.7, image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=500&h=500&fit=crop", desc: "High performance sneakers for daily wear and sports." },
