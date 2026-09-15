@@ -1,18 +1,16 @@
-
-
 const products = [
-    { id: 1, name: "Nike Air Max Running Shoes", category: "Shoes", price: 299, oldPrice: 5999, rating: 4.5, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop", desc: "Premium running shoes with excellent cushioning and breathable design." },
-    { id: 2, name: "Adidas Ultraboost Sneakers", category: "Shoes", price: 199, oldPrice: 9999, rating: 4.7, image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=500&h=500&fit=crop", desc: "High performance sneakers for daily wear and sports." },
-    { id: 3, name: "Puma Casual Sneakers", category: "Shoes", price: 199, oldPrice: 3999, rating: 4.3, image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=500&h=500&fit=crop", desc: "Stylish casual sneakers perfect for everyday use." },
-    { id: 4, name: "Genuine Leather Formal Belt", category: "Belts", price: 99, oldPrice: 1299, rating: 4.4, image: "https://images.unsplash.com/photo-1624222247344-550fb60583fd?w=500&h=500&fit=crop", desc: "Premium genuine leather belt for formal occasions." },
-    { id: 5, name: "Casual Canvas Belt", category: "Belts", price: 69, oldPrice: 799, rating: 4.1, image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop", desc: "Comfortable canvas belt for casual wear." },
-    { id: 6, name: "Cotton Printed Kurta", category: "Kurta", price: 179, oldPrice: 1899, rating: 4.6, image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&h=500&fit=crop", desc: "Soft cotton kurta with beautiful prints. Perfect for festive occasions." },
-    { id: 7, name: "Silk Embroidered Kurta", category: "Kurta", price: 229, oldPrice: 3499, rating: 4.8, image: "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=500&h=500&fit=crop", desc: "Elegant silk kurta with fine embroidery work." },
+    { id: 1, name: "Nike Air Max Running Shoes", category: "Shoes", price: 299, oldPrice: 5999, rating: 4.5, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-205525~2.png", desc: "Premium running shoes with excellent cushioning and breathable design." },
+    { id: 2, name: "Adidas Ultraboost Sneakers", category: "Shoes", price: 199, oldPrice: 9999, rating: 4.7, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-205606~2.png", desc: "High performance sneakers for daily wear and sports." },
+    { id: 3, name: "Puma Casual Sneakers", category: "Shoes", price: 199, oldPrice: 3999, rating: 4.3, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-205739~2.png", desc: "Stylish casual sneakers perfect for everyday use." },
+    { id: 4, name: "Genuine Leather Formal Belt", category: "Belts", price: 99, oldPrice: 1299, rating: 4.4, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-205814~2.png", desc: "Premium genuine leather belt for formal occasions." },
+    { id: 5, name: "Casual Canvas Belt", category: "Belts", price: 69, oldPrice: 799, rating: 4.1, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-205915~2.png", desc: "Comfortable canvas belt for casual wear." },
+    { id: 6, name: "Cotton Printed Kurta", category: "Kurta", price: 179, oldPrice: 1899, rating: 4.6, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-210216.png?max-h=7524&fit=crop", desc: "Soft cotton kurta with beautiful prints. Perfect for festive occasions." },
+    { id: 7, name: "Silk Embroidered Kurta", category: "Kurta", price: 229, oldPrice: 3499, rating: 4.8, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-210052~2.png", desc: "Elegant silk kurta with fine embroidery work." },
     { id: 8, name: "Linen Summer Kurta", category: "Kurta", price: 319, oldPrice: 1499, rating: 4.4, image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500&h=500&fit=crop", desc: "Breathable linen kurta ideal for summer." },
     { id: 9, name: "Wireless Bluetooth Earbuds", category: "Electronics", price: 99, oldPrice: 2999, rating: 4.5, image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500&h=500&fit=crop", desc: "True wireless earbuds with long battery life and noise isolation." },
-    { id: 10, name: "BMW Remote Control", category: "Electronics", price: 79, oldPrice: 4999, rating: 4.6, image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=500&h=500&fit=crop", desc: "Only for BMW lovers, a very shiny and Exllent physis based car, with premium Remote." },
-    { id: 11, name: "Old Vibe Car Remote Control", category: "Electronics", price: 69, oldPrice: 2199, rating: 4.3, image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=500&h=500&fit=crop", desc: "High powered old vibe var with best remote for 2 to 3 years Babies" },
-    { id: 12, name: "Thar Premium Hot Weals, in black shiny", category: "Electronics", price: 99, oldPrice: 6999, rating: 4.7, image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=500&h=500&fit=crop", desc: "Premium over-hand, shiny with active lighting, for hot wheels lovers." }
+    { id: 10, name: "BMW Remote Control", category: "Electronics", price: 79, oldPrice: 4999, rating: 4.6, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-210441~2.png", desc: "Only for BMW lovers, a very shiny and Exllent physis based car, with premium Remote." },
+    { id: 11, name: "Old Vibe Car Remote Control", category: "Electronics", price: 69, oldPrice: 2199, rating: 4.3, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-031449~2.png", desc: "High powered old vibe var with best remote for 2 to 3 years Babies" },
+    { id: 12, name: "Thar Premium Hot Weals, in black shiny", category: "Electronics", price: 99, oldPrice: 6999, rating: 4.7, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-210653~2.png", desc: "Premium over-hand, shiny with active lighting, for hot wheels lovers." }
 ];
 
 const categories = [
@@ -40,19 +38,15 @@ function updateCartCount() {
 
 // ========== INTERSTITIAL AD LOGIC ==========
 function showPage(pageId) {
-    // Agar already interstitial dikh raha hai to ignore
     if (!document.getElementById('interstitialAd').classList.contains('hidden')) return;
     
-    // Store target page and show interstitial
     pendingPage = pageId;
     
-    // Close button pehle hide karo
     const closeBtn = document.querySelector('.interstitial-close');
     closeBtn.style.display = 'none';
     
     document.getElementById('interstitialAd').classList.remove('hidden');
     
-    // 5 second baad close button dikhao
     setTimeout(() => {
         closeBtn.style.display = 'block';
     }, 5000);
@@ -60,16 +54,12 @@ function showPage(pageId) {
 
 function closeInterstitial() {
     document.getElementById('interstitialAd').classList.add('hidden');
-    
-    // Close button dobara hide kar do (next time ke liye)
     document.querySelector('.interstitial-close').style.display = 'none';
     
     if (pendingPage) {
-        // Actually switch to the page
         document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
         document.getElementById(pendingPage).classList.add('active');
         
-        // Update nav
         document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
         if (pendingPage === 'home') document.querySelectorAll('.nav-link')[0].classList.add('active');
         if (pendingPage === 'categories') document.querySelectorAll('.nav-link')[1].classList.add('active');
@@ -83,6 +73,7 @@ function closeInterstitial() {
         pendingPage = null;
     }
 }
+
 function goBack() {
     if (history.length > 1) {
         history.pop();
@@ -113,8 +104,8 @@ function renderAllCategories() {
 function renderProducts(list, containerId) {
     document.getElementById(containerId).innerHTML = list.map(p => `
         <div class="product-card" onclick="openProduct(${p.id})">
-            <img src="\( {p.image}" class="product-img" alt=" \){p.name}" loading="lazy"
-                 onerror="this.src='https://via.placeholder.com/400x400?text=Product'">
+            <img src="${p.image}" class="product-img" alt="${p.name}" loading="lazy"
+                 onerror="this.src='https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop'">
             <div class="product-info">
                 <div class="product-name">${p.name}</div>
                 <div class="price-row">
@@ -140,7 +131,7 @@ function openProduct(id) {
     if (!p) return;
     currentBuyProduct = p;
     document.getElementById('productContent').innerHTML = `
-        <img src="\( {p.image}" class="detail-img" alt=" \){p.name}">
+        <img src="${p.image}" class="detail-img" alt="${p.name}">
         <div class="detail-name">${p.name}</div>
         <div class="price-row" style="margin:10px 0">
             <span class="detail-price">₹${p.price.toLocaleString()}</span>
@@ -183,7 +174,7 @@ function renderCart() {
 
     itemsDiv.innerHTML = cart.map(item => `
         <div class="cart-item">
-            <img src="\( {item.image}" alt=" \){item.name}">
+            <img src="${item.image}" alt="${item.name}">
             <div class="cart-item-info">
                 <div style="font-weight:600">${item.name}</div>
                 <div class="price-row" style="margin:6px 0">
@@ -312,7 +303,6 @@ function confirmCOD() {
 }
 
 function showServerOverload() {
-    // Directly go home without interstitial for overload
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.getElementById('home').classList.add('active');
     document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
