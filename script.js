@@ -1,13 +1,4 @@
-<script>
-  atOptions = {
-    'key' : '40154d57b8f77367c97eb89f4d35bcac',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highrevenueformat.com/40154d57b8f77367c97eb89f4d35bcac/invoke.js"></script>
+
 
 const products = [
     { id: 1, name: "Nike Air Max Running Shoes", category: "Shoes", price: 299, oldPrice: 5999, rating: 4.5, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop", desc: "Premium running shoes with excellent cushioning and breathable design." },
@@ -51,20 +42,33 @@ function updateCartCount() {
 function showPage(pageId) {
     // Agar already interstitial dikh raha hai to ignore
     if (!document.getElementById('interstitialAd').classList.contains('hidden')) return;
-
+    
     // Store target page and show interstitial
     pendingPage = pageId;
+    
+    // Close button pehle hide karo
+    const closeBtn = document.querySelector('.interstitial-close');
+    closeBtn.style.display = 'none';
+    
     document.getElementById('interstitialAd').classList.remove('hidden');
+    
+    // 5 second baad close button dikhao
+    setTimeout(() => {
+        closeBtn.style.display = 'block';
+    }, 5000);
 }
 
 function closeInterstitial() {
     document.getElementById('interstitialAd').classList.add('hidden');
     
+    // Close button dobara hide kar do (next time ke liye)
+    document.querySelector('.interstitial-close').style.display = 'none';
+    
     if (pendingPage) {
         // Actually switch to the page
         document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
         document.getElementById(pendingPage).classList.add('active');
-
+        
         // Update nav
         document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
         if (pendingPage === 'home') document.querySelectorAll('.nav-link')[0].classList.add('active');
@@ -73,13 +77,12 @@ function closeInterstitial() {
             document.querySelectorAll('.nav-link')[6].classList.add('active');
             renderCart();
         }
-
+        
         if (history[history.length - 1] !== pendingPage) history.push(pendingPage);
         window.scrollTo(0, 0);
         pendingPage = null;
     }
 }
-
 function goBack() {
     if (history.length > 1) {
         history.pop();
