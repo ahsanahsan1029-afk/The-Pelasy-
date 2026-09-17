@@ -45,10 +45,6 @@
         <nav class="main-nav">
             <div class="container">
                 <a href="#" class="nav-link active" onclick="showPage('home'); return false;">Home</a>
-                <a href="#" class="nav-link" onclick="showPage('categories'); return false;">Categories</a>
-                <a href="#" class="nav-link" onclick="openCategory('Shoes'); return false;">Shoes</a>
-                <a href="#" class="nav-link" onclick="openCategory('Belts'); return false;">Belts</a>
-                <a href="#" class="nav-link" onclick="openCategory('Kurta'); return false;">Kurta</a>
                 <a href="#" class="nav-link" onclick="openCategory('Electronics'); return false;">Electronics</a>
                 <a href="#" class="nav-link" onclick="showPage('cart'); return false;">My Cart</a>
             </div>
@@ -60,8 +56,8 @@
             <section id="home" class="page active">
                 <div class="hero-banner">
                     <h2>Welcome to The Pelasy</h2>
-                    <p>Premium quality products at best prices</p>
-                    <button onclick="showPage('categories')">Shop Now</button>
+                    <p>Premium quality RC Cars at best prices</p>
+                    <button onclick="openCategory('Electronics')">Shop Now</button>
                 </div>
 
                 <!-- Scrollable Ad 1 -->
@@ -79,7 +75,7 @@
                     <script src="https://www.highrevenueformat.com/40154d57b8f77367c97eb89f4d35bcac/invoke.js"></script>
                 </div>
 
-                <h2 class="section-title">Shop by Category</h2>
+                <h2 class="section-title">Categories</h2>
                 <div class="category-grid" id="homeCategories"></div>
 
                 <!-- Scrollable Ad 2 -->
@@ -239,7 +235,7 @@
                 <div id="cartItems"></div>
                 <div id="cartSummary" class="cart-summary hidden">
                     <div class="row"><span>Subtotal</span><span id="subtotal">₹0</span></div>
-                    <div class="row"><span>Delivery</span><span>₹40</span></div>
+                    <div class="row"><span>Delivery</span><span style="color:#27ae60; font-weight:600;">FREE</span></div>
                     <div class="row total"><span>Total</span><span id="grandTotal">₹0</span></div>
                     <button class="checkout-btn" onclick="startBuyFlow()">Proceed to Buy</button>
                 </div>
