@@ -98,10 +98,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .product-img { width: 100%; height: 200px; object-fit: cover; background: #f5f5f5; }
 .product-info { padding: 14px; }
 .product-name { font-size: 15px; font-weight: 600; height: 42px; overflow: hidden; color: #111; }
-.price-row { margin: 8px 0 4px; display: flex; align-items: baseline; gap: 8px; }
+.price-row { margin: 8px 0 2px; display: flex; align-items: baseline; gap: 8px; }
 .product-price { font-size: 17px; font-weight: 700; color: #111; }
 .old-price { font-size: 13px; color: #888; text-decoration: line-through; }
-.rating { font-size: 13px; color: #555; }
+.free-delivery { font-size: 12px; color: #27ae60; font-weight: 600; margin-bottom: 4px; display: flex; align-items: center; gap: 4px; }
+.rating { font-size: 13px; color: #f39c12; font-weight: 600; }
 .add-btn {
     width: 100%; margin-top: 10px; padding: 10px; background: #111; color: white;
     border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 14px;
