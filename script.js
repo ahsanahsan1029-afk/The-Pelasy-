@@ -1,23 +1,18 @@
 const products = [
-    { id: 1, name: "Nike Air Max Running Shoes", category: "Shoes", price: 299, oldPrice: 5999, rating: 4.5, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-205525~2.png", desc: "Premium running shoes with excellent cushioning and breathable design." },
-    { id: 2, name: "Adidas Ultraboost Sneakers", category: "Shoes", price: 199, oldPrice: 9999, rating: 4.7, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-205606~2.png", desc: "High performance sneakers for daily wear and sports." },
-    { id: 3, name: "Puma Casual Sneakers", category: "Shoes", price: 199, oldPrice: 3999, rating: 4.3, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-205739~2.png", desc: "Stylish casual sneakers perfect for everyday use." },
-    { id: 4, name: "Genuine Leather Formal Belt", category: "Belts", price: 99, oldPrice: 1299, rating: 4.4, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-205814~2.png", desc: "Premium genuine leather belt for formal occasions." },
-    { id: 5, name: "Casual Canvas Belt", category: "Belts", price: 69, oldPrice: 799, rating: 4.1, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-205915~2.png", desc: "Comfortable canvas belt for casual wear." },
-    { id: 6, name: "Cotton Printed Kurta", category: "Kurta", price: 179, oldPrice: 1899, rating: 4.6, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-210216.png?max-h=7524&fit=crop", desc: "Soft cotton kurta with beautiful prints. Perfect for festive occasions." },
-    { id: 7, name: "Silk Embroidered Kurta", category: "Kurta", price: 229, oldPrice: 3499, rating: 4.8, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-210052~2.png", desc: "Elegant silk kurta with fine embroidery work." },
-    { id: 8, name: "Linen Summer Kurta", category: "Kurta", price: 319, oldPrice: 1499, rating: 4.4, image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500&h=500&fit=crop", desc: "Breathable linen kurta ideal for summer." },
-    { id: 9, name: "Wireless Bluetooth Earbuds", category: "Electronics", price: 99, oldPrice: 2999, rating: 4.5, image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500&h=500&fit=crop", desc: "True wireless earbuds with long battery life and noise isolation." },
-    { id: 10, name: "BMW Remote Control", category: "Electronics", price: 79, oldPrice: 4999, rating: 4.6, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-210441~2.png", desc: "Only for BMW lovers, a very shiny and Exllent physis based car, with premium Remote." },
-    { id: 11, name: "Old Vibe Car Remote Control", category: "Electronics", price: 69, oldPrice: 2199, rating: 4.3, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-031449~2.png", desc: "High powered old vibe var with best remote for 2 to 3 years Babies" },
-    { id: 12, name: "Thar Premium Hot Weals, in black shiny", category: "Electronics", price: 99, oldPrice: 6999, rating: 4.7, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-210653~2.png", desc: "Premium over-hand, shiny with active lighting, for hot wheels lovers." }
+    { id: 1, name: "BMW High Speed Remote Control Racing Car", category: "Electronics", price: 79, oldPrice: 4999, rating: 4.8, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-210441~2.png", desc: "Super-fast 1:18 scale BMW racing car with full function remote control and LED lights." },
+    { id: 2, name: "Classic Vintage RC Car", category: "Electronics", price: 59, oldPrice: 2999, rating: 4.6, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-031449~2.png", desc: "Retro style remote control car with sturdy design and rechargeable battery pack." },
+    { id: 3, name: "Thar Off-Road 4x4 RC Monster Car", category: "Electronics", price: 99, oldPrice: 6999, rating: 4.9, image: "https://6aa9629e9422e77b387feffc.imgix.net/sandbox/Screenshot_20260915-210653~2.png", desc: "Heavy-duty off-road Thar replica with suspension shock absorbers and active headlight features." },
+    { id: 4, name: "High Speed Drift Racing RC Sports Car", category: "Electronics", price: 89, oldPrice: 5499, rating: 4.7, image: "https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=500&h=500&fit=crop", desc: "Special drift racing car with extra drift tires and aerodynamic sports body." },
+    { id: 5, name: "Lamborghini Style RC Supercar", category: "Electronics", price: 69, oldPrice: 3999, rating: 4.8, image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=500&h=500&fit=crop", desc: "Sleek supercar model with functional doors and glossy premium finish." },
+    { id: 6, name: "Rock Crawler 4WD Off-Road RC Truck", category: "Electronics", price: 99, oldPrice: 5999, rating: 4.9, image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=500&h=500&fit=crop", desc: "All-terrain rock crawler capable of driving over rocks, sand, and rough surfaces easily." },
+    { id: 7, name: "Fast & Furious Turbo RC Speed Car", category: "Electronics", price: 79, oldPrice: 4299, rating: 4.7, image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500&h=500&fit=crop", desc: "Turbocharged speed car with 2.4GHz remote control for zero interference." },
+    { id: 8, name: "4x4 Stunt Flip RC Car with 360 Rotation", category: "Electronics", price: 69, oldPrice: 3499, rating: 4.8, image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500&h=500&fit=crop", desc: "Amazing double-sided stunt car that can perform 360-degree spins and double flips." },
+    { id: 9, name: "Off-Road Desert Buggy RC Racing Car", category: "Electronics", price: 89, oldPrice: 4899, rating: 4.6, image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=500&h=500&fit=crop", desc: "Durable desert buggy style remote control car with high grip rubber tires." },
+    { id: 10, name: " पुलिस RC High-Speed Chaser Car", category: "Electronics", price: 59, oldPrice: 3199, rating: 4.7, image: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=500&h=500&fit=crop", desc: "Realistic police patrol RC car with LED emergency siren lights and sound." }
 ];
 
 const categories = [
-    { name: "Shoes", icon: "fa-shoe-prints" },
-    { name: "Belts", icon: "fa-ring" },
-    { name: "Kurta", icon: "fa-tshirt" },
-    { name: "Electronics", icon: "fa-laptop" }
+    { name: "Electronics", icon: "fa-car" }
 ];
 
 let cart = JSON.parse(localStorage.getItem('pelasy_cart')) || [];
@@ -64,7 +59,7 @@ function closeInterstitial() {
         if (pendingPage === 'home') document.querySelectorAll('.nav-link')[0].classList.add('active');
         if (pendingPage === 'categories') document.querySelectorAll('.nav-link')[1].classList.add('active');
         if (pendingPage === 'cart') {
-            document.querySelectorAll('.nav-link')[6].classList.add('active');
+            document.querySelectorAll('.nav-link')[2].classList.add('active');
             renderCart();
         }
         
@@ -96,7 +91,7 @@ function renderAllCategories() {
     document.getElementById('allCategories').innerHTML = categories.map(c => `
         <div class="cat-list-item" onclick="openCategory('${c.name}')">
             <i class="fas ${c.icon}"></i>
-            <div><h3>${c.name}</h3><p>Explore collection</p></div>
+            <div><h3>${c.name}</h3><p>Explore RC Cars collection</p></div>
         </div>
     `).join('');
 }
@@ -105,13 +100,14 @@ function renderProducts(list, containerId) {
     document.getElementById(containerId).innerHTML = list.map(p => `
         <div class="product-card" onclick="openProduct(${p.id})">
             <img src="${p.image}" class="product-img" alt="${p.name}" loading="lazy"
-                 onerror="this.src='https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop'">
+                 onerror="this.src='https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=500&h=500&fit=crop'">
             <div class="product-info">
                 <div class="product-name">${p.name}</div>
                 <div class="price-row">
                     <span class="product-price">₹${p.price.toLocaleString()}</span>
                     <span class="old-price">₹${p.oldPrice.toLocaleString()}</span>
                 </div>
+                <div class="free-delivery"><i class="fas fa-truck"></i> Free Delivery</div>
                 <div class="rating">★ ${p.rating}</div>
                 <button class="add-btn" onclick="event.stopPropagation(); addToCart(${p.id})">Add to Cart</button>
             </div>
@@ -137,6 +133,7 @@ function openProduct(id) {
             <span class="detail-price">₹${p.price.toLocaleString()}</span>
             <span class="old-price">₹${p.oldPrice.toLocaleString()}</span>
         </div>
+        <div class="free-delivery" style="font-size:15px; margin-bottom:10px;"><i class="fas fa-truck"></i> Free Delivery</div>
         <div class="rating">★ ${p.rating} Rating</div>
         <div class="detail-desc">${p.desc}</div>
         <div class="detail-actions">
@@ -181,6 +178,7 @@ function renderCart() {
                     <span style="font-weight:700">₹${item.price.toLocaleString()}</span>
                     <span class="old-price">₹${item.oldPrice.toLocaleString()}</span>
                 </div>
+                <div class="free-delivery" style="font-size:12px; margin-bottom:6px;"><i class="fas fa-truck"></i> Free Delivery</div>
                 <div class="qty-controls">
                     <button onclick="changeQty(${item.id}, -1)">−</button>
                     <span>${item.qty}</span>
@@ -193,7 +191,7 @@ function renderCart() {
 
     const sub = cart.reduce((s, i) => s + i.price * i.qty, 0);
     document.getElementById('subtotal').textContent = '₹' + sub.toLocaleString();
-    document.getElementById('grandTotal').textContent = '₹' + (sub + 40).toLocaleString();
+    document.getElementById('grandTotal').textContent = '₹' + sub.toLocaleString();
 }
 
 function changeQty(id, delta) {
@@ -214,7 +212,7 @@ function removeFromCart(id) {
 function searchProducts() {
     const q = document.getElementById('searchInput').value.toLowerCase().trim();
     if (!q) {
-        renderProducts(products.slice(0, 8), 'featuredProducts');
+        renderProducts(products, 'featuredProducts');
         return;
     }
     const filtered = products.filter(p => p.name.toLowerCase().includes(q) || p.category.toLowerCase().includes(q));
@@ -289,6 +287,7 @@ function selectPayment(method) {
                     <span class="product-price">₹${p.price.toLocaleString()}</span>
                     <span class="old-price">₹${p.oldPrice.toLocaleString()}</span>
                 </div>
+                <div class="free-delivery" style="justify-content:center; margin-bottom:8px;"><i class="fas fa-truck"></i> Free Delivery</div>
                 <div style="color:#555; font-size:14px;">Payment: Cash on Delivery</div>
             </div>
         `;
@@ -329,6 +328,6 @@ window.onload = function() {
 
     renderHomeCategories();
     renderAllCategories();
-    renderProducts(products.slice(0, 8), 'featuredProducts');
+    renderProducts(products, 'featuredProducts');
     updateCartCount();
 };
